@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Backround" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class Backround.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Apple" type-java="Apple" name="apple" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple,339,242)" expression-java="addObject(apple, 339, 242)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple2" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple2,461,209)" expression-java="addObject(apple2, 461, 209)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple3" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple3,489,103)" expression-java="addObject(apple3, 489, 103)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple4" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple4,351,134)" expression-java="addObject(apple4, 351, 134)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple5" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple5,438,285)" expression-java="addObject(apple5, 438, 285)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple6" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple6,524,336)" expression-java="addObject(apple6, 524, 336)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple7" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple7,317,327)" expression-java="addObject(apple7, 317, 327)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple8" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple8,426,342)" expression-java="addObject(apple8, 426, 342)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple9" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple9,561,179)" expression-java="addObject(apple9, 561, 179)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple10" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple10,524,235)" expression-java="addObject(apple10, 524, 235)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple11" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple11,555,82)" expression-java="addObject(apple11, 555, 82)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple12" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple12,423,126)" expression-java="addObject(apple12, 423, 126)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple13" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple13,404,190)" expression-java="addObject(apple13, 404, 190)" enable="true"/>
+                <variable type="Snake" type-java="Snake" name="snake" value="new Snake()" value-java=" new Snake()" enable="true"/>
+                <call expression="addObject(snake,157,211)" expression-java="addObject(snake, 157, 211)" enable="true"/>
+                <call expression="snake.setLocation(140,233)" expression-java="snake.setLocation(140, 233)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple14" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple14,273,54)" expression-java="addObject(apple14, 273, 54)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple15" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple15,311,83)" expression-java="addObject(apple15, 311, 83)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple16" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple16,240,157)" expression-java="addObject(apple16, 240, 157)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple17" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple17,70,286)" expression-java="addObject(apple17, 70, 286)" enable="true"/>
+                <call expression="apple17.setLocation(70,286)" expression-java="apple17.setLocation(70, 286)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple18" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple18,74,208)" expression-java="addObject(apple18, 74, 208)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple19" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple19,92,63)" expression-java="addObject(apple19, 92, 63)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple20" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple20,51,114)" expression-java="addObject(apple20, 51, 114)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple21" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple21,143,122)" expression-java="addObject(apple21, 143, 122)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple22" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple22,142,358)" expression-java="addObject(apple22, 142, 358)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple23" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple23,174,328)" expression-java="addObject(apple23, 174, 328)" enable="true"/>
+                <variable type="Apple" type-java="Apple" name="apple24" value="new Apple()" value-java=" new Apple()" enable="true"/>
+                <call expression="addObject(apple24,202,271)" expression-java="addObject(apple24, 202, 271)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>

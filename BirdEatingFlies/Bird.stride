@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Bird" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields>
+        <variable access="private" type="GreenfootImage" type-java="GreenfootImage" name="image1" value="new GreenfootImage(&quot;frame-1_small.png&quot;)" value-java=" new GreenfootImage(&quot;frame-1_small.png&quot;)" enable="true"/>
+        <variable access="private" type="GreenfootImage" type-java="GreenfootImage" name="image2" value="new GreenfootImage(&quot;frame-8_small.png&quot;)" value-java=" new GreenfootImage(&quot;frame-8_small.png&quot;)" enable="true"/>
+        <variable access="private" type="int" type-java="int" name="insectCount" enable="true"/>
+    </fields>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <assign dest="insectCount" dest-java="insectCount" src="0" src-java="0" enable="true"/>
+                <assign dest="image1" dest-java="image1" src="new GreenfootImage(&quot;frame-1_small.png&quot;)" src-java=" new GreenfootImage(&quot;frame-1_small.png&quot;)" enable="true"/>
+                <assign dest="image2" dest-java="image2" src="new GreenfootImage(&quot;frame-8_small.png&quot;)" src-java=" new GreenfootImage(&quot;frame-8_small.png&quot;)" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the Bird wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="checkKeypress()" expression-java="checkKeypress()" enable="true"/>
+                <call expression="switchImage()" expression-java="switchImage()" enable="true"/>
+                <call expression="insectEaten()" expression-java="insectEaten()" enable="true"/>
+                <call expression="getWorld().showText(&quot;INSECTS EATEN: &quot;+insectCount,500,100)" expression-java="getWorld().showText(&quot;INSECTS EATEN: &quot; + insectCount, 500, 100)" enable="true"/>
+                <call expression="Winning()" expression-java="Winning()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="Winning" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="insectCount==10" condition-java="insectCount == 10" enable="true">
+                    <ifStatements>
+                        <call expression="getWorld().showText(&quot;YOU WIN LITTLE BIRD&quot;,300,200)" expression-java="getWorld().showText(&quot;YOU WIN LITTLE BIRD&quot;, 300, 200)" enable="true"/>
+                        <call expression="Greenfoot.stop()" expression-java="Greenfoot.stop()" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="checkKeypress" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="Greenfoot.isKeyDown(&quot;up&quot;)" condition-java="Greenfoot.isKeyDown(&quot;up&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="move(3)" expression-java="move(3)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;down&quot;)" condition-java="Greenfoot.isKeyDown(&quot;down&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="move(-3)" expression-java="move(-3)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;right&quot;)" condition-java="Greenfoot.isKeyDown(&quot;right&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="turn(3)" expression-java="turn(3)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;left&quot;)" condition-java="Greenfoot.isKeyDown(&quot;left&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="turn(-3)" expression-java="turn(-3)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="switchImage" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="getImage()==image1" condition-java="getImage() == image1" enable="true">
+                    <ifStatements>
+                        <call expression="setImage(image2)" expression-java="setImage(image2)" enable="true"/>
+                    </ifStatements>
+                    <else>
+                        <call expression="setImage(image1)" expression-java="setImage(image1)" enable="true"/>
+                    </else>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="insectEaten" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="isTouching(Insect.class)" condition-java="isTouching(Insect.class)" enable="true">
+                    <ifStatements>
+                        <call expression="removeTouching(Insect.class)" expression-java="removeTouching(Insect.class)" enable="true"/>
+                        <assign dest="insectCount" dest-java="insectCount" src="insectCount+1" src-java="insectCount + 1" enable="true"/>
+                        <call expression="Greenfoot.playSound(&quot;slurp.wav&quot;)" expression-java="Greenfoot.playSound(&quot;slurp.wav&quot;)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>

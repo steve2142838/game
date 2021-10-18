@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="MyWorld" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class MyWorld.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="eagle" type-java="eagle" name="eagle" value="new eagle()" value-java=" new eagle()" enable="true"/>
+                <call expression="addObject(eagle,69,106)" expression-java="addObject(eagle, 69, 106)" enable="true"/>
+                <blank/>
+                <variable type="Insect" type-java="Insect" name="insect" value="new Insect()" value-java=" new Insect()" enable="true"/>
+                <call expression="addObject(insect,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(400))" expression-java="addObject(insect, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400))" enable="true"/>
+                <variable type="Insect" type-java="Insect" name="insect2" value="new Insect()" value-java=" new Insect()" enable="true"/>
+                <call expression="addObject(insect2,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(400))" expression-java="addObject(insect2, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400))" enable="true"/>
+                <variable type="Insect" type-java="Insect" name="insect3" value="new Insect()" value-java=" new Insect()" enable="true"/>
+                <call expression="addObject(insect3,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(400))" expression-java="addObject(insect3, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400))" enable="true"/>
+                <variable type="Insect" type-java="Insect" name="insect4" value="new Insect()" value-java=" new Insect()" enable="true"/>
+                <call expression="addObject(insect4,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(400))" expression-java="addObject(insect4, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400))" enable="true"/>
+                <variable type="Insect" type-java="Insect" name="insect5" value="new Insect()" value-java=" new Insect()" enable="true"/>
+                <call expression="addObject(insect5,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(400))" expression-java="addObject(insect5, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400))" enable="true"/>
+                <variable type="Insect" type-java="Insect" name="insect6" value="new Insect()" value-java=" new Insect()" enable="true"/>
+                <call expression="addObject(insect6,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(400))" expression-java="addObject(insect6, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400))" enable="true"/>
+                <variable type="Insect" type-java="Insect" name="insect7" value="new Insect()" value-java=" new Insect()" enable="true"/>
+                <call expression="addObject(insect7,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(400))" expression-java="addObject(insect7, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400))" enable="true"/>
+                <variable type="Insect" type-java="Insect" name="insect8" value="new Insect()" value-java=" new Insect()" enable="true"/>
+                <call expression="addObject(insect8,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(400))" expression-java="addObject(insect8, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400))" enable="true"/>
+                <variable type="Insect" type-java="Insect" name="insect9" value="new Insect()" value-java=" new Insect()" enable="true"/>
+                <call expression="addObject(insect9,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(400))" expression-java="addObject(insect9, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400))" enable="true"/>
+                <variable type="Insect" type-java="Insect" name="insect10" value="new Insect()" value-java=" new Insect()" enable="true"/>
+                <call expression="addObject(insect10,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber(400))" expression-java="addObject(insect10, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400))" enable="true"/>
+                <variable type="Bird" type-java="Bird" name="bird" value="new Bird()" value-java=" new Bird()" enable="true"/>
+                <call expression="addObject(bird,119,345)" expression-java="addObject(bird, 119, 345)" enable="true"/>
+                <call expression="bird.setLocation(151,342)" expression-java="bird.setLocation(151, 342)" enable="true"/>
+                <call expression="eagle.setLocation(513,59)" expression-java="eagle.setLocation(513, 59)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
